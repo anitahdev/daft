@@ -1,8 +1,9 @@
-import Handler from "./components/Handler";
+import LogInPage from "./components/LogInPage";
+
 function App() {
   return (
     <>
-      <Handler />
+      <LogInPage />
     </>
   );
 }
