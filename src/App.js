@@ -9,8 +9,8 @@ import Home from "./pages/Home";
 function App() {
   return (
     <>
-      <MyAppBar />
       <Router>
+        <MyAppBar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/login" element={<LogInPage />}></Route>

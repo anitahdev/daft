@@ -1,13 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Home() {
-   return (
-    <div style={{ 
-      backgroundImage: `url${}` 
-    }}>
-      
-        </div>
-   )
+  return <div></div>;
 }
 
-export default Home
+export default Home;
