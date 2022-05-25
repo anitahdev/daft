@@ -1,15 +1,22 @@
 import LogInPage from "./components/LogInPage";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MyAppBar from "./components/MyAppBar";
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Contact from "./pages/Contact";
+import Portfolio from "./pages/Portfolio";
+import Error from "./pages/Error";
 function App() {
   return (
     <>
+      <MyAppBar />
       <Router>
         <Routes>
-          <Route path="/"></Route>
+          <Route path="/" element={<LogInPage />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/portfolio" element={<Portfolio />}></Route>
+          <Route path="*" element={<Error />}></Route>
         </Routes>
       </Router>
-      <LogInPage />
     </>
   );
 }
