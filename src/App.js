@@ -9,7 +9,6 @@ import Home from "./pages/Home";
 function App() {
   return (
     <>
-      <LogInPage />
       <Router>
         <MyAppBar />
         <Routes>
