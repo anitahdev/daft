@@ -12,7 +12,7 @@ function App() {
       <Router>
         <MyAppBar />
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/home" element={<Home />}></Route>
           <Route path="/login" element={<LogInPage />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/portfolio" element={<Portfolio />}></Route>
@@ -22,3 +22,4 @@ function App() {
     </>
   );
 }
+export default App
