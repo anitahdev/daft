@@ -52,6 +52,7 @@ const ResponsiveAppBar = () => {
               fontWeight: 700,
               letterSpacing: ".3rem",
               color: "inherit",
+              opacity: 0.6,
               textDecoration: "none",
             }}
           ></Typography>
@@ -64,6 +65,7 @@ const ResponsiveAppBar = () => {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              
             >
               <MenuIcon />
             </IconButton>
