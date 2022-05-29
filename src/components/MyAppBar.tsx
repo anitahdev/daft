@@ -11,7 +11,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 
-const pages = ["Home", "About", "Profile", "Portfolio", "Login"];
+const pages = ["Home", "About", "Contact", "Portfolio", "Login"];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -52,6 +52,7 @@ const ResponsiveAppBar = () => {
               fontWeight: 700,
               letterSpacing: ".3rem",
               color: "inherit",
+              opacity: 0.6,
               textDecoration: "none",
             }}
           ></Typography>
@@ -64,6 +65,7 @@ const ResponsiveAppBar = () => {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              
             >
               <MenuIcon />
             </IconButton>
@@ -88,7 +90,7 @@ const ResponsiveAppBar = () => {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                    <Link to={`/${page}`}>Page</Link>
+                    <Link to={`/${page}`}>{page}</Link>
                   </Typography>
                 </MenuItem>
               ))}
