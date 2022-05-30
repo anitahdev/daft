@@ -41,13 +41,13 @@ export default function Contact() {
         </AccordionDetails>
       </Accordion>
       <Accordion
-        expanded={expanded === "panel1"}
-        onChange={handleChange("panel1")}
+        expanded={expanded === "panel2"}
+        onChange={handleChange("panel2")}
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1bh-content"
-          id="panel1bh-header"
+          aria-controls="panel2bh-content"
+          id="panel2bh-header"
         >
           <Typography sx={{ width: "33%", flexShrink: 0 }}>
             Social media
