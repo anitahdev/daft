@@ -7,6 +7,7 @@ import Portfolio from "./pages/Portfolio";
 import Error from "./pages/Error";
 import Home from "./pages/Home";
 import About from "./pages/About";
+
 function App() {
   return (
     <>
