@@ -5,18 +5,22 @@ import ImageListItem from "@mui/material/ImageListItem";
 export default function Portfolio() {
   return (
     <>
-    <ImageList sx={{ width: 1250, height: 500 }} cols={3} rowHeight={200}>
-      {itemData.map((item) => (
-        <ImageListItem key={item.img}>
-          <img
-            src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-            srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-            loading="lazy"
-          />
-        </ImageListItem>
-      ))}
+      <ImageList
+        sx={{ width: "100%", height: "100vh" }}
+        cols={3}
+        rowHeight={200}
+      >
+        {itemData.map((item) => (
+          <ImageListItem key={item.img}>
+            <img
+              src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+              srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+              loading="lazy"
+            />
+          </ImageListItem>
+        ))}
       </ImageList>
-      </>
+    </>
   );
 }
 
