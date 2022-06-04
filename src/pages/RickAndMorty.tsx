@@ -1,33 +1,14 @@
-import React from "react";
+// import React, { useEffect } from "react";
 
-export default class RickAndMorty extends React.Component{
-    render() {
-        return <div>RickAndMorty</div>
-    }
-    
-}
-
-// export default class RickAndMorty extends React.Component {
-//   state = {
-//     loading: true,
-//     character: null,
-//   };
-
-//   async componentDidMount() {
-//     const url = "https://rickandmortyapi.com/api/character";
-//     const response = await fetch(url);
-//     const data = await response.json();
-//     this.setState({ character: data.results[0], loading: false });
-//   }
-//   render() {
-//     return (
-//       <div>
-//         {this.state.loading || !this.state.character ? (
-//           <div>loading...</div>
-//         ) : (
-//           <div>???</div>
-//         )}
-//       </div>
-//     );
-//   }
+// function RickAndMorty() {
+//   fetch("https://rickandmortyapi.com/api/character")
+//     .then((response) => response.json())
+//     .then((data) => console.log(data))
+//     .catch((err) => console.error(err));
+//   useEffect(() => {
+//     console.log("load only once");
+//   }, []);
+//     return <div>{ }</div>;
 // }
+
+// export default RickAndMorty;
