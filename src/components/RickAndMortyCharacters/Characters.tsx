@@ -1,7 +1,6 @@
-/* eslint-disable react-hooks/exhaustive-deps*/
+
 import React, { useEffect, useState } from "react";
 import { ICharacter } from "./types";
-
 import Character from "./Character";
 import StatusBar from "./StatusBar";
 import Grid from "@mui/material/Grid";
@@ -11,17 +10,18 @@ function Characters() {
     ICharacter[]
   >([]);
   const [status, setStatus] = useState<string>("");
-  // let baseUrl: string = "https://rickandmortyapi.com/api/character";
+  let baseUrl: string = "https://rickandmortyapi.com/api/character";
 
   useEffect(() => {
-    fetch("https://rickandmortyapi.com/api/character")
+    fetch(baseUrl)
       .then((response) => response.json())
       .then((data) => {
         setListOfCharactersState(data.results);
       });
   }, []);
   useEffect(() => {
-    fetch("https://rickandmortyapi.com/api/character")
+    let newUrl = `${baseUrl}/?status=${status}`
+    fetch(newUrl)
       .then((response) => response.json())
       .then((data) => {
         setListOfCharactersState(data.results);
