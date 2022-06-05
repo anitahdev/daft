@@ -7,7 +7,6 @@ import { ICharacter } from "./types";
 interface CharacterProps {
   character: ICharacter;
 }
-
 function Character({ character }: CharacterProps) {
   return (
     <Grid
@@ -42,4 +41,5 @@ function Character({ character }: CharacterProps) {
     </Grid>
   );
 }
+
 export default Character;

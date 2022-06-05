@@ -6,29 +6,34 @@ import StatusBar from "./StatusBar";
 import Grid from "@mui/material/Grid";
 
 function Characters() {
-  const [listOfCharactersState, setListofCharactersState] = useState<
+  const [listOfCharactersState, setListOfCharactersState] = useState<
     ICharacter[]
   >([]);
   const [status, setStatus] = useState<string>("");
-  let baseUrl = "https://rickandmortyapi.com/api/character";
+  let baseUrl: string = "https://rickandmortyapi.com/api/character";
+
   useEffect(() => {
     fetch(baseUrl)
       .then((response) => response.json())
       .then((data) => {
-        setListofCharactersState(data.results);
+        setListOfCharactersState(data.results);
       });
   }, []);
-    useEffect(() => {
-    fetch(baseUrl)
+  useEffect(() => {
+    let newUrl = baseUrl;
+    if (status !== "show all") {
+      newUrl = `${newUrl}/?status=${status}`;
+    }
+    fetch(newUrl)
       .then((response) => response.json())
       .then((data) => {
-        setListofCharactersState(data.results);
+        setListOfCharactersState(data.results);
       });
   }, [status]);
-
   return (
     <div>
       <StatusBar setStatus={setStatus} />
+
       <Grid container spacing={2} mt={1}>
         {listOfCharactersState.map((c) => {
           return <Character character={c} />;
