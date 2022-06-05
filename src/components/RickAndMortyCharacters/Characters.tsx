@@ -1,4 +1,4 @@
-
+/*eslint-disable react-hooks/exhaustive-deps*/
 import React, { useEffect, useState } from "react";
 import { ICharacter } from "./types";
 import Character from "./Character";
@@ -20,7 +20,7 @@ function Characters() {
       });
   }, []);
   useEffect(() => {
-    let newUrl = `${baseUrl}/?status=${status}`
+    let newUrl = `${baseUrl}/?status=${status}`;
     fetch(newUrl)
       .then((response) => response.json())
       .then((data) => {
