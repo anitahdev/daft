@@ -1,14 +1,7 @@
-// import React, { useEffect } from "react";
+import React from "react";
+import Characters from "../components/RickAndMortyCharacters/Characters";
+function RickAndMorty() {
+  return <Characters />;
+}
 
-// function RickAndMorty() {
-//   fetch("https://rickandmortyapi.com/api/character")
-//     .then((response) => response.json())
-//     .then((data) => console.log(data))
-//     .catch((err) => console.error(err));
-//   useEffect(() => {
-//     console.log("load only once");
-//   }, []);
-//     return <div>{ }</div>;
-// }
-
-// export default RickAndMorty;
+export default RickAndMorty;
