@@ -7,6 +7,7 @@ import Portfolio from "./pages/Portfolio";
 import Error from "./pages/Error";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import RickAndMorty from "./pages/RickAndMorty";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/portfolio" element={<Portfolio />}></Route>
           <Route path="/about" element={<About />}></Route>
+          <Route path="/RM" element={<RickAndMorty />}></Route>
           <Route path="*" element={<Error />}></Route>
         </Routes>
       </Router>
