@@ -1,6 +1,5 @@
 
-![Daft_Academy_Frontend_Course](https://user-images.githubusercontent.com/95635795/181266929-92398f1b-7b1e-4ee0-8e1b-57fd160abda1.png)
-
+![Daft_Academy_Certificate_Project](https://user-images.githubusercontent.com/95635795/184185188-35121a3e-ccbf-4f4f-a592-972dee8954c0.png)
 
 
 # Daft Academy Certificate project
