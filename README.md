@@ -15,7 +15,7 @@ During this course I gained maximum points for creating this app because of it's
 Clone the project
 
 ```bash
-  git clone https://github.com/anitahoroszko/daft
+  git clone https://github.com/anitavictoria/daft
 ```
 
 Go to the project directory
